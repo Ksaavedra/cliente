@@ -1,0 +1,49 @@
+.page-footer {
+  background-color: #022601;
+  padding-top: 2%;
+}
+
+.social-network {
+  list-style: none;
+  padding: 0;
+}
+
+.social-network > li {
+  display: inline;
+  padding: 5px;
+  margin:0;
+  font-size: 35px;
+}
+
+.icoFacebook, .icoInstagram, .icoLinkedin, 
+.icoWhatsapp , .icoSlack, .icoTelegram, .icoTwitter, .text-black {
+  color: white;
+}
+
+.icoFacebook:hover {
+  color: #3b5998;
+}
+
+.icoInstagram:hover {
+  color: #c13584;
+}
+
+.icoLinkedin:hover {
+  color: #0072b1;
+}
+
+.icoWhatsapp:hover {
+  color: #1db136;
+}
+
+.icoSlack:hover {
+  color: #0072b1;
+} 
+
+.icoTelegram:hover {
+  color: #0072b1;
+} 
+
+.icoTwitter:hover {
+  color: #0072b1;
+}

@@ -1,0 +1,126 @@
+.quadroLogin {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 5% !important;
+    border: 1px solid;
+    padding: 3%;
+    background: #C3F2C1;
+}
+
+.tituloLogin {
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.textLogin {
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 4em;
+    color: #022601;
+    text-decoration: underline #022601;
+}
+
+.buttomLogin {
+    background: #022601;
+    color: white;
+}
+
+.linkTextHeader {
+    color: black;
+    margin-left: 50%;
+    text-align: end;
+}
+
+.linkTextFooter {
+    color: black;
+    margin-left: 60%;
+    text-align: end;
+}
+
+.buttomLogin {
+    background: #022601;
+    color: white;
+    padding: 2%;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+.paragrafoLogin {
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+.paragrafoLogin2 {
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.inputEmail {
+    padding: 2%;
+    margin-bottom: 4%;
+}
+
+.inputSenha {
+    padding: 2%;
+}
+
+.pretty {
+    position: relative;
+    margin: 1em;
+    
+}
+  
+.pretty input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 1em;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+.pretty-inner label {
+    position: initial;
+    display: inline-block;
+    font-weight: 400;
+    margin: 0;
+    text-indent: 1.5em;
+    min-width: calc(1em + 2px);
+}
+
+.pretty-inner label:after,
+.pretty-inner label:before {
+    content: '';
+    width: calc(1em + 2px);
+    height: calc(1em + 2px);
+    display: block;
+    box-sizing: border-box;
+    border-radius: 2;
+    border: 1px solid transparent;
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+}
+
+.pretty-inner label:before {
+    border-color: #022601;
+}
+
+.pretty input:checked~.pretty-inner label:after {
+    background-color: #00bb82;
+    width: calc(1em - 6px);
+    height: calc(1em - 6px);
+    top: 4px;
+    left: 4px;
+}

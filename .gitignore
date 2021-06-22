@@ -1,0 +1,9 @@
+#node
+front-end/angular/node_modules
+
+#misc
+.vscode
+
+# System Files
+.DS_Store
+node_modules

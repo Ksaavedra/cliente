@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="tituloFormulario">
+    <h5 class="textFormulario">Cadastre sua startup!</h5>
+  </div>
+  <div class="quadroFormulario">
+    <div class="col-12">
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label paragrafoFormulario">Nome</label>
+          <input type="text" class="form-control" id="validationCustom01" [(ngModel)]="startup.nome" name="nome" required>
+          <div class="valid-feedback">
+            Parece bom!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label paragrafoFormulario">CNPJ</label>
+          <input type="text" class="form-control" id="validationCustom02" [(ngModel)]="startup.cnpj" name="cnpj" required>
+          <div class="valid-feedback">
+            Parece bom!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label paragrafoFormulario">E-mail</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control paragrafoFormulario" id="validationCustomUsername" [(ngModel)]="startup.email" name="email" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Por favor, escolha um e-mail.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom03" class="form-label paragrafoFormulario">Senha</label>
+          <input type="password" class="form-control" id="validationCustom03" [(ngModel)]="startup.senha" name="senha" required>
+          <div class="invalid-feedback">
+            Por favor, escolha uma senha.
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom03" class="form-label paragrafoFormulario">Telefone</label>
+          <input type="text" class="form-control" id="validationCustom03" [(ngModel)]="startup.telefone" name="telefone" required>
+          <div class="invalid-feedback">
+            Por favor, escolha uma senha.
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <label for="validationCustom05" class="form-label paragrafoFormulario">Valor</label>
+          <input type="text" class="form-control" id="validationCustom05" [(ngModel)]="startup.valor" name="valor" required>
+          <div class="invalid-feedback">
+            Por favor, digite um valor.
+          </div>
+        </div>
+        <div class="col-md-12">
+          <label for="validationCustom05" class="form-label paragrafoFormulario">Texto</label>
+          <input type="text" class="form-control" id="validationCustom05" [(ngModel)]="startup.texto" name="texto" required>
+        </div>      
+        <div class="col-12">
+          <button class="btn btn-primary buttomFormulario" type="submit" (click)=adicionar()>Cadastrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

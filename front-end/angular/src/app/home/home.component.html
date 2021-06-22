@@ -1,0 +1,65 @@
+<div class="card mb-6">
+  <img src="../../assets/imagens/banner2.jpg" class="card-img-top" alt="">
+  <div class="textBanner">
+    <h1 class="bannerTitulo">O capital usado, além do próprio dinheiro do empreendedor, pode vir de diferentes fontes</h1>
+  </div>
+</div>
+<div class="col-12" style="margin-top:2%; margin-bottom:2%;">
+  <h1 class="tituloText">Startup</h1>
+</div>
+
+<div class="p-grid cardsQuadro">
+  <div class="p-col-12 p-md-6 p-lg-4" *ngFor="let card of cards; let indexOfelement=index;">
+    <p-card [style]="{width: '400px', border:'1px solid'}" styleClass="p-card-shadow">
+      <ng-template pTemplate="header">
+        <div class="cardsImg">
+          <h3 class="cardTitulo">{{card.title}}</h3>
+          <img alt="Card" src="{{card.img}}" style="width: 397px; height: 267px;">
+          <button type="submit" class="btn {{card.porcentagemNumero == 100? 'btn-error':'btn-primary'}}  cardButton">{{card.buttonText}}</button>
+        </div>
+      </ng-template>
+      <div class="textConteudo">
+          <p>Modalidade: <span>Alvo</span></p>
+          <p>Rentabilidade: <span>{{card.porcentagemNumero}}</span>% por ano</p>
+          <p>Investimento: <span>{{card.investimentoTotal}}</span></p>
+          <p>Valor Captado: <span>{{card.investidoresMinimo}}</span></p>
+      </div>
+      <ng-template pTemplate="footer">
+        <button type="button" (click)="showDialog(indexOfelement)" style="margin-top: -6%; border: none; width: 100%;" class="paragrafoText">Saiba Mais</button>
+      </ng-template>
+    </p-card>
+  </div>
+</div>
+
+<!--Cards Modal-->
+<p-dialog header="{{cardsModal}}" class="p-times" [(visible)]="display" [style]="{width: '50%'}">
+  <div class="col-6" style="float: left;">
+    <img class="cardImg" src="{{imgModal}}" alt="">
+  </div>
+  <div class="col-6" style="float: right; padding-left: 3%;">
+    <div class="row">
+      <h4 class="tituloCard2">Valor R$ <span>{{investimentoValorModal}}</span></h4>
+      <h5 class="paragragoCard2">Investimento Mínimo R$ <span>{{investimentoMinimoModal}}</span></h5>
+      <h5 class="paragragoCard2">Investidores <span>{{pessoaModal}}</span> pessoas</h5>
+      <p class="paragragoCard2">Pagamento <span>Atual</span></p>
+    </div>
+    <div>
+      <button type="submit" class="btn btn-primary {{rentabilidadeModal == 100? 'ocultar':'mostrar'}} card2Button" (click)="clickInvestir(indexModal)">Investir</button>
+    </div>
+  </div>
+  <div class="col-12" style="float: left;">
+    <div class="row">
+      <div class="conteudoFooter">
+        <p class="pagagrafoFooter">{{descriptionModal}}
+        </p>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="barraFooter">
+            <p-progressBar [value]="values.toFixed(2)" [style]="{height: '25px'}"></p-progressBar>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</p-dialog>

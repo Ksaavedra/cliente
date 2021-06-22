@@ -1,0 +1,14 @@
+.titutoText {
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 4%;
+    color: #022601;
+    margin-top: 4%;
+    text-decoration: underline #022601;
+}
+
+.pagagrafoText {
+    text-align: justify;
+    font-size: x-large;
+    margin-bottom: 5%;
+}
